@@ -11,7 +11,7 @@ public class circleClass {
     
     
      public void initialize(double radius) {
-         System.out.println("Radius value? ");
+         System.out.print("Please enter the radius: ");
          radius = computerKeyboardInput.nextDouble();
          this.radius = radius;
     }
@@ -23,8 +23,5 @@ public class circleClass {
          System.out.println(circumfrence);
          area = Math.PI * radius * radius;
          System.out.println(area);
-    }
-     
-     
-     
+    }  
 }
