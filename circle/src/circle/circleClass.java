@@ -1,13 +1,21 @@
 package circle;
+
 import java.util.Scanner;
-public class circleClass {
-    public double radius;
-    Scanner computerKeyboardInput = new Scanner(System.in);
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-     public void initialize(double radius) {
-         System.out.println("Radius value? ");
-         radius = computerKeyboardInput.nextDouble();
+
+public class Circle {
+
+    public static void main(String[] args) {
+        Scanner computerKeyboardInput = new Scanner(System.in);
+        System.out.println("Ch 6 Example - Circle - by Kevin Bell\n");
+        Circle spot;
+        spot = new Circle();
+
+        System.out.println("Original circle");
+        spot.initialize();
+        spot.printCircleData();
+
+        System.out.println("\nChanged circle");
+        spot.setRadius(5);
+        spot.printCircleData();
     }
 }
