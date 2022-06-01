@@ -22,11 +22,11 @@ public class circleClass {
 
     public void printCircleData() {
         diameter = radius * 2;
-        System.out.println("Radius: " + radius);
-        System.out.println("Diameter: " + diameter);
+        System.out.printf("Radius: %-,10.3f\n", radius);
+        System.out.printf("Diameter: %-,10.3f\n" , diameter);
         circumfrence = 2 * Math.PI * radius;
-        System.out.println("Circumfrence: " +circumfrence);
+        System.out.printf("Circumfrence: %-,10.3f\n" ,circumfrence);
         area = Math.PI * radius * radius;
-        System.out.println("area: " +area);
+        System.out.printf("area: %-,10.3f\n",area);
     }
 }
